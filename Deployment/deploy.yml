@@ -6,7 +6,7 @@
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "maturiraghu/scientific_calculator"
+        name: "asrith1158/scientific_calculator"
         source: pull
       register: docker_pull_result
 
@@ -28,4 +28,4 @@
       ignore_errors: true
 
     - name: Run scientific calculator container
-      shell: docker run -it -d --name scientific_calculator maturiraghu/scientific_calculator
+      shell: docker run -it -d --name scientific_calculator asrith1158/scientific_calculator
